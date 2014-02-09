@@ -27,7 +27,7 @@ class SSP_Admin {
 		$this->dir = dirname( $file );
 		$this->file = $file;
 		$this->assets_dir = trailingslashit( $this->dir ) . 'assets';
-		$this->assets_url = esc_url( trailingslashit( plugins_url( '/assets/', $file ) ) );
+		$this->assets_url = esc_url( trailingslashit( plugins_url( 'seriously-simple-podcasting/assets/' ) ) );
 		$this->template_path = trailingslashit( $this->dir ) . 'templates/';
 		$this->home_url = trailingslashit( home_url() );
 		$this->token = 'podcast';
